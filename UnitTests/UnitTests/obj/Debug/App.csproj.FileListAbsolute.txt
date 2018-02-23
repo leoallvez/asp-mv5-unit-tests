@@ -50,3 +50,4 @@ C:\Users\administrator\Documents\Visual Studio 2015\Projects\asp-mv5-unit-tests\
 C:\Users\administrator\Documents\Visual Studio 2015\Projects\asp-mv5-unit-tests\UnitTests\UnitTests\bin\Newtonsoft.Json.xml
 C:\Users\administrator\Documents\Visual Studio 2015\Projects\asp-mv5-unit-tests\UnitTests\UnitTests\obj\Debug\UnitTests.dll
 C:\Users\administrator\Documents\Visual Studio 2015\Projects\asp-mv5-unit-tests\UnitTests\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\administrator\Documents\Visual Studio 2015\Projects\asp-mv5-unit-tests\UnitTests\UnitTests\obj\Debug\App.csprojResolveAssemblyReference.cache

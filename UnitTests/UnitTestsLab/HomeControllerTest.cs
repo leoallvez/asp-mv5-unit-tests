@@ -10,14 +10,12 @@ namespace UnitTestsLab
     [TestClass]
     public class HomeControllerTest
     {
-        //String Compare Test.
         [TestMethod]
         public void SampleTest()
         {
             Assert.AreEqual("HomeController", "HomeController");
         }
 
-        //View Name Test.
         [TestMethod]
         public void DetailsViewTest()
         {
@@ -27,9 +25,8 @@ namespace UnitTestsLab
             Assert.AreEqual("Details", result.ViewName);
         }
 
-        //Model class atribute value.
         [TestMethod]
-        public void TestDetailsViewData()
+        public void DetailsModelValueTest()
         {
             var controller = new HomeController();
             var result = controller.DetailsWithModel(2) as ViewResult;
@@ -38,9 +35,9 @@ namespace UnitTestsLab
             Assert.IsNotNull(product);
             Assert.AreEqual("Laptop", product.Name);
         }
-        //Redirect test.
+
         [TestMethod]
-        public void TestDetailsRedirect()
+        public void DetailsRedirectTest()
         {
             var controller = new HomeController();
             var result = controller.DetailsWithIf(-1) as RedirectToRouteResult;
@@ -48,9 +45,8 @@ namespace UnitTestsLab
             Assert.AreEqual("Index", result.RouteValues["action"]);
         }
 
-        //Test ViewModel value.
         [TestMethod]
-        public void ThenReturnTheAboutViewModel()
+        public void ThenReturnTheAboutViewModelTest()
         {
             var controller = new HomeController();
             var result = controller.Index() as ViewResult;
@@ -60,9 +56,8 @@ namespace UnitTestsLab
             Assert.AreEqual("About DanylkoWeb", model.Title);
         }
     
-        // Count list elements in action.
         [TestMethod]
-        public void CountElementsInAction()
+        public void CountElementsInActionTest()
         {
             var controller = new HomeController();
             var result = controller.Products() as ViewResult;
@@ -74,7 +69,7 @@ namespace UnitTestsLab
         }
 
         [TestMethod]
-        public void ViewBagValues()
+        public void ViewBagValuesTest()
         {
             var controller = new HomeController();
             var result = controller.About() as ViewResult;
@@ -85,10 +80,10 @@ namespace UnitTestsLab
         }
 
         [TestMethod]
-        public void CheckCountValueTest()
+        public void IdRangeTest()
         {
-            HomeController controller = new HomeController();
-            ViewResult result = controller.CheckCountValue(1) as ViewResult;
+            var controller = new HomeController();
+            var result = controller.IdRangeValue(1) as ViewResult;
             Assert.IsNotNull(result);
         }
     }

@@ -60,7 +60,7 @@ namespace App.Controllers
             return View(products);
         }
 
-        public ActionResult CheckCountValue(int i)
+        public ActionResult IdRangeValue(int i)
         {
             if (i > 20)
             {
